@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Dealership" representedClassName="Dealership" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="vehicles" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Vehicle" inverseName="dealer" inverseEntity="Vehicle" syncable="YES"/>
+    </entity>
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="dealer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dealership" inverseName="vehicles" inverseEntity="Dealership" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dealership" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Vehicle" positionX="-54" positionY="18" width="128" height="120"/>
+    </elements>
+</model>

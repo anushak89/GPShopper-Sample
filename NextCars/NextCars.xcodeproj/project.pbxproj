@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F136810F23562E91001EF63C /* NextCars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F136810D23562E91001EF63C /* NextCars.xcdatamodeld */; };
+		F17392F022DF810500A04B2F /* DealershipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17392EF22DF810500A04B2F /* DealershipCell.swift */; };
+		F17392F222DF812900A04B2F /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17392F122DF812900A04B2F /* VehicleCell.swift */; };
+		F17392F422DFB87100A04B2F /* VehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17392F322DFB87100A04B2F /* VehicleResponse.swift */; };
+		F1C75A0C22DD27B200718F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A0B22DD27B200718F7A /* AppDelegate.swift */; };
+		F1C75A1122DD27B200718F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C75A0F22DD27B200718F7A /* Main.storyboard */; };
+		F1C75A1622DD27B300718F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C75A1522DD27B300718F7A /* Assets.xcassets */; };
+		F1C75A1922DD27B300718F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C75A1722DD27B300718F7A /* LaunchScreen.storyboard */; };
+		F1C75A2422DD27B300718F7A /* NextCarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A2322DD27B300718F7A /* NextCarsTests.swift */; };
+		F1C75A3822DD28A500718F7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A3722DD28A500718F7A /* HomeViewController.swift */; };
+		F1C75A3B22DD409500718F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A3A22DD409500718F7A /* Constants.swift */; };
+		F1C75A3D22DD415A00718F7A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A3C22DD415A00718F7A /* Services.swift */; };
+		F1C75A3F22DD418E00718F7A /* DealershipServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A3E22DD418E00718F7A /* DealershipServiceResponse.swift */; };
+		F1C75A4822DD470F00718F7A /* Dealership+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4422DD470F00718F7A /* Dealership+CoreDataClass.swift */; };
+		F1C75A4922DD470F00718F7A /* Dealership+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4522DD470F00718F7A /* Dealership+CoreDataProperties.swift */; };
+		F1C75A4A22DD470F00718F7A /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4622DD470F00718F7A /* Vehicle+CoreDataClass.swift */; };
+		F1C75A4B22DD470F00718F7A /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4722DD470F00718F7A /* Vehicle+CoreDataProperties.swift */; };
+		F1C75A4D22DD477000718F7A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4C22DD477000718F7A /* APIManager.swift */; };
+		F1C75A4F22DE11AF00718F7A /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A4E22DE11AF00718F7A /* VehicleListViewModel.swift */; };
+		F1C75A5122DE11CA00718F7A /* DealershipListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5022DE11CA00718F7A /* DealershipListViewModel.swift */; };
+		F1C75A5322DE11FA00718F7A /* VehicleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5222DE11FA00718F7A /* VehicleCellViewModel.swift */; };
+		F1C75A5522DE121100718F7A /* DealershipCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5422DE121100718F7A /* DealershipCellViewModel.swift */; };
+		F1C75A5722DE123600718F7A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5622DE123600718F7A /* DataManager.swift */; };
+		F1C75A5A22DE310200718F7A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5922DE310200718F7A /* CoreDataManager.swift */; };
+		F1C75A5C22DE351500718F7A /* Dealership.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C75A5B22DE351500718F7A /* Dealership.storyboard */; };
+		F1C75A5E22DE354D00718F7A /* DealershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5D22DE354D00718F7A /* DealershipViewController.swift */; };
+		F1C75A6022DE355E00718F7A /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A5F22DE355E00718F7A /* VehiclesViewController.swift */; };
+		F1C75A6222DE3DFC00718F7A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A6122DE3DFC00718F7A /* RootViewController.swift */; };
+		F1C75A6422DE3FF600718F7A /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A6322DE3FF600718F7A /* NavigationManager.swift */; };
+		F1C75A6622DE47AE00718F7A /* DataSetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C75A6522DE47AE00718F7A /* DataSetResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1C75A2022DD27B300718F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1C75A0022DD27B200718F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1C75A0722DD27B200718F7A;
+			remoteInfo = CoxCars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F136810E23562E91001EF63C /* NextCars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NextCars.xcdatamodel; sourceTree = "<group>"; };
+		F17392EF22DF810500A04B2F /* DealershipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealershipCell.swift; sourceTree = "<group>"; };
+		F17392F122DF812900A04B2F /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		F17392F322DFB87100A04B2F /* VehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponse.swift; sourceTree = "<group>"; };
+		F1C75A0822DD27B200718F7A /* NextCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C75A0B22DD27B200718F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1C75A1022DD27B200718F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1C75A1522DD27B300718F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1C75A1822DD27B300718F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1C75A1A22DD27B300718F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C75A1F22DD27B300718F7A /* NextCarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextCarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C75A2322DD27B300718F7A /* NextCarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCarsTests.swift; sourceTree = "<group>"; };
+		F1C75A2522DD27B300718F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C75A3722DD28A500718F7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1C75A3A22DD409500718F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1C75A3C22DD415A00718F7A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		F1C75A3E22DD418E00718F7A /* DealershipServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DealershipServiceResponse.swift; path = ../DealershipServiceResponse.swift; sourceTree = "<group>"; };
+		F1C75A4422DD470F00718F7A /* Dealership+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dealership+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1C75A4522DD470F00718F7A /* Dealership+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dealership+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1C75A4622DD470F00718F7A /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F1C75A4722DD470F00718F7A /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1C75A4C22DD477000718F7A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F1C75A4E22DE11AF00718F7A /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		F1C75A5022DE11CA00718F7A /* DealershipListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealershipListViewModel.swift; sourceTree = "<group>"; };
+		F1C75A5222DE11FA00718F7A /* VehicleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCellViewModel.swift; sourceTree = "<group>"; };
+		F1C75A5422DE121100718F7A /* DealershipCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealershipCellViewModel.swift; sourceTree = "<group>"; };
+		F1C75A5622DE123600718F7A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F1C75A5922DE310200718F7A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F1C75A5B22DE351500718F7A /* Dealership.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dealership.storyboard; sourceTree = "<group>"; };
+		F1C75A5D22DE354D00718F7A /* DealershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealershipViewController.swift; sourceTree = "<group>"; };
+		F1C75A5F22DE355E00718F7A /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		F1C75A6122DE3DFC00718F7A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F1C75A6322DE3FF600718F7A /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		F1C75A6522DE47AE00718F7A /* DataSetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1C75A0522DD27B200718F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C75A1C22DD27B300718F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F17392EE22DF80D600A04B2F /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F17392EF22DF810500A04B2F /* DealershipCell.swift */,
+				F17392F122DF812900A04B2F /* VehicleCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		F1C759FF22DD27B200718F7A = {
+			isa = PBXGroup;
+			children = (
+				F1C75A0A22DD27B200718F7A /* NextCars */,
+				F1C75A2222DD27B300718F7A /* NextCarsTests */,
+				F1C75A0922DD27B200718F7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1C75A0922DD27B200718F7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A0822DD27B200718F7A /* NextCars.app */,
+				F1C75A1F22DD27B300718F7A /* NextCarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1C75A0A22DD27B200718F7A /* NextCars */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A3522DD282000718F7A /* General */,
+				F1C75A3422DD281A00718F7A /* Models */,
+				F1C75A3322DD280F00718F7A /* Views */,
+				F1C75A3222DD280800718F7A /* View Models */,
+				F1C75A3122DD27FB00718F7A /* Controllers */,
+				F1C75A3022DD27F500718F7A /* Managers */,
+				F1C75A2F22DD27E700718F7A /* Utils */,
+				F1C75A2E22DD27DA00718F7A /* Supporting Files */,
+				F1C75A3922DD407500718F7A /* CoreData */,
+			);
+			path = NextCars;
+			sourceTree = "<group>";
+		};
+		F1C75A2222DD27B300718F7A /* NextCarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A2322DD27B300718F7A /* NextCarsTests.swift */,
+				F1C75A2522DD27B300718F7A /* Info.plist */,
+			);
+			path = NextCarsTests;
+			sourceTree = "<group>";
+		};
+		F1C75A2E22DD27DA00718F7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A1A22DD27B300718F7A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1C75A2F22DD27E700718F7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A3A22DD409500718F7A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F1C75A3022DD27F500718F7A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A3C22DD415A00718F7A /* Services.swift */,
+				F1C75A4C22DD477000718F7A /* APIManager.swift */,
+				F1C75A5622DE123600718F7A /* DataManager.swift */,
+				F1C75A5922DE310200718F7A /* CoreDataManager.swift */,
+				F1C75A6322DE3FF600718F7A /* NavigationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F1C75A3122DD27FB00718F7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A6122DE3DFC00718F7A /* RootViewController.swift */,
+				F1C75A3722DD28A500718F7A /* HomeViewController.swift */,
+				F1C75A5D22DE354D00718F7A /* DealershipViewController.swift */,
+				F1C75A5F22DE355E00718F7A /* VehiclesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1C75A3222DD280800718F7A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A4E22DE11AF00718F7A /* VehicleListViewModel.swift */,
+				F1C75A5222DE11FA00718F7A /* VehicleCellViewModel.swift */,
+				F1C75A5022DE11CA00718F7A /* DealershipListViewModel.swift */,
+				F1C75A5422DE121100718F7A /* DealershipCellViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F1C75A3322DD280F00718F7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F17392EE22DF80D600A04B2F /* Custom Cells */,
+				F1C75A3622DD285F00718F7A /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1C75A3422DD281A00718F7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A4322DD45AE00718F7A /* Coredata Models */,
+				F1C75A4222DD45A600718F7A /* Service Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1C75A3522DD282000718F7A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A0B22DD27B200718F7A /* AppDelegate.swift */,
+				F1C75A1522DD27B300718F7A /* Assets.xcassets */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F1C75A3622DD285F00718F7A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A0F22DD27B200718F7A /* Main.storyboard */,
+				F1C75A5B22DE351500718F7A /* Dealership.storyboard */,
+				F1C75A1722DD27B300718F7A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F1C75A3922DD407500718F7A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F136810D23562E91001EF63C /* NextCars.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F1C75A4222DD45A600718F7A /* Service Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A6522DE47AE00718F7A /* DataSetResponse.swift */,
+				F17392F322DFB87100A04B2F /* VehicleResponse.swift */,
+				F1C75A3E22DD418E00718F7A /* DealershipServiceResponse.swift */,
+			);
+			path = "Service Models";
+			sourceTree = "<group>";
+		};
+		F1C75A4322DD45AE00718F7A /* Coredata Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C75A4422DD470F00718F7A /* Dealership+CoreDataClass.swift */,
+				F1C75A4522DD470F00718F7A /* Dealership+CoreDataProperties.swift */,
+				F1C75A4622DD470F00718F7A /* Vehicle+CoreDataClass.swift */,
+				F1C75A4722DD470F00718F7A /* Vehicle+CoreDataProperties.swift */,
+			);
+			path = "Coredata Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1C75A0722DD27B200718F7A /* NextCars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1C75A2822DD27B300718F7A /* Build configuration list for PBXNativeTarget "NextCars" */;
+			buildPhases = (
+				F1C75A0422DD27B200718F7A /* Sources */,
+				F1C75A0522DD27B200718F7A /* Frameworks */,
+				F1C75A0622DD27B200718F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextCars;
+			productName = CoxCars;
+			productReference = F1C75A0822DD27B200718F7A /* NextCars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1C75A1E22DD27B300718F7A /* NextCarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1C75A2B22DD27B300718F7A /* Build configuration list for PBXNativeTarget "NextCarsTests" */;
+			buildPhases = (
+				F1C75A1B22DD27B300718F7A /* Sources */,
+				F1C75A1C22DD27B300718F7A /* Frameworks */,
+				F1C75A1D22DD27B300718F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1C75A2122DD27B300718F7A /* PBXTargetDependency */,
+			);
+			name = NextCarsTests;
+			productName = CoxCarsTests;
+			productReference = F1C75A1F22DD27B300718F7A /* NextCarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1C75A0022DD27B200718F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = NextDigit;
+				TargetAttributes = {
+					F1C75A0722DD27B200718F7A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F1C75A1E22DD27B300718F7A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F1C75A0722DD27B200718F7A;
+					};
+				};
+			};
+			buildConfigurationList = F1C75A0322DD27B200718F7A /* Build configuration list for PBXProject "NextCars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1C759FF22DD27B200718F7A;
+			productRefGroup = F1C75A0922DD27B200718F7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1C75A0722DD27B200718F7A /* NextCars */,
+				F1C75A1E22DD27B300718F7A /* NextCarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1C75A0622DD27B200718F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C75A1922DD27B300718F7A /* LaunchScreen.storyboard in Resources */,
+				F1C75A5C22DE351500718F7A /* Dealership.storyboard in Resources */,
+				F1C75A1622DD27B300718F7A /* Assets.xcassets in Resources */,
+				F1C75A1122DD27B200718F7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C75A1D22DD27B300718F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1C75A0422DD27B200718F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C75A6022DE355E00718F7A /* VehiclesViewController.swift in Sources */,
+				F1C75A4A22DD470F00718F7A /* Vehicle+CoreDataClass.swift in Sources */,
+				F1C75A6422DE3FF600718F7A /* NavigationManager.swift in Sources */,
+				F1C75A5722DE123600718F7A /* DataManager.swift in Sources */,
+				F1C75A4F22DE11AF00718F7A /* VehicleListViewModel.swift in Sources */,
+				F1C75A5122DE11CA00718F7A /* DealershipListViewModel.swift in Sources */,
+				F1C75A5A22DE310200718F7A /* CoreDataManager.swift in Sources */,
+				F1C75A5322DE11FA00718F7A /* VehicleCellViewModel.swift in Sources */,
+				F1C75A3D22DD415A00718F7A /* Services.swift in Sources */,
+				F1C75A4B22DD470F00718F7A /* Vehicle+CoreDataProperties.swift in Sources */,
+				F1C75A4822DD470F00718F7A /* Dealership+CoreDataClass.swift in Sources */,
+				F1C75A6222DE3DFC00718F7A /* RootViewController.swift in Sources */,
+				F17392F222DF812900A04B2F /* VehicleCell.swift in Sources */,
+				F17392F022DF810500A04B2F /* DealershipCell.swift in Sources */,
+				F1C75A4D22DD477000718F7A /* APIManager.swift in Sources */,
+				F1C75A4922DD470F00718F7A /* Dealership+CoreDataProperties.swift in Sources */,
+				F1C75A3F22DD418E00718F7A /* DealershipServiceResponse.swift in Sources */,
+				F1C75A5522DE121100718F7A /* DealershipCellViewModel.swift in Sources */,
+				F17392F422DFB87100A04B2F /* VehicleResponse.swift in Sources */,
+				F1C75A6622DE47AE00718F7A /* DataSetResponse.swift in Sources */,
+				F1C75A0C22DD27B200718F7A /* AppDelegate.swift in Sources */,
+				F1C75A3822DD28A500718F7A /* HomeViewController.swift in Sources */,
+				F1C75A3B22DD409500718F7A /* Constants.swift in Sources */,
+				F1C75A5E22DE354D00718F7A /* DealershipViewController.swift in Sources */,
+				F136810F23562E91001EF63C /* NextCars.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C75A1B22DD27B300718F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1C75A2422DD27B300718F7A /* NextCarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1C75A2122DD27B300718F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1C75A0722DD27B200718F7A /* NextCars */;
+			targetProxy = F1C75A2022DD27B300718F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1C75A0F22DD27B200718F7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1C75A1022DD27B200718F7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1C75A1722DD27B300718F7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1C75A1822DD27B300718F7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1C75A2622DD27B300718F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1C75A2722DD27B300718F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1C75A2922DD27B300718F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYB4FH67A;
+				INFOPLIST_FILE = "$(SRCROOT)/NextCars/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextDigit.NextCars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1C75A2A22DD27B300718F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYB4FH67A;
+				INFOPLIST_FILE = "$(SRCROOT)/NextCars/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextDigit.NextCars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1C75A2C22DD27B300718F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYB4FH67A;
+				INFOPLIST_FILE = NextCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextDigit.NextCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextCars.app/NextCars";
+			};
+			name = Debug;
+		};
+		F1C75A2D22DD27B300718F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYB4FH67A;
+				INFOPLIST_FILE = NextCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextDigit.NextCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextCars.app/NextCars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1C75A0322DD27B200718F7A /* Build configuration list for PBXProject "NextCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C75A2622DD27B300718F7A /* Debug */,
+				F1C75A2722DD27B300718F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1C75A2822DD27B300718F7A /* Build configuration list for PBXNativeTarget "NextCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C75A2922DD27B300718F7A /* Debug */,
+				F1C75A2A22DD27B300718F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1C75A2B22DD27B300718F7A /* Build configuration list for PBXNativeTarget "NextCarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1C75A2C22DD27B300718F7A /* Debug */,
+				F1C75A2D22DD27B300718F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F136810D23562E91001EF63C /* NextCars.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F136810E23562E91001EF63C /* NextCars.xcdatamodel */,
+			);
+			currentVersion = F136810E23562E91001EF63C /* NextCars.xcdatamodel */;
+			path = NextCars.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1C75A0022DD27B200718F7A /* Project object */;
+}
